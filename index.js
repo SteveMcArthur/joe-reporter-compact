@@ -15,44 +15,47 @@ if (!isBrowser) {
 
 
 function CompactReporter(config) {
-    
+
     config = config || {};
-    config.fail = config.fail ? config.fail : isWindows ? ' \u00D7 ' : ' ✘  ';
-    config.pass = config.pass ? config.pass : isWindows ? ' \u221A ' : ' ✔  ';
+    var fail = config.fail ? config.fail : isWindows ? ' X ' : ' ✘  ';
+    var pass = config.pass ? config.pass : isWindows ? ' \u221A ' : ' ✔  ';
     CompactReporter.super_.call(this, config);
     this.tty = ((process.stdout && process.stdout.isTTY === true) && (process.stderr && process.stderr.isTTY === true)) || false;
     this.useColors = (process ? process.argv.indexOf('--no-colors') > -1 : false) ? (cliColor === null) : true;
     this.actual = "Comparison Actual ";
     this.expected = "Comparison Expected ";
     this.indent = '    ';
+    this.config.fail = this.useColors ? this.color(fail, "red", "bold") : fail;
+    this.config.pass = this.useColors ? this.color(pass, "green", "bold") : pass;
 
 }
 
 util.inherits(CompactReporter, ConsoleReporter);
 
-CompactReporter.prototype.startTest = function () {};
 
-CompactReporter.prototype.finishSuite = function (suite, err) {
-    var name = this.getItemName(suite);
-    if (!name) {
-        return;
-    }
-    var check = err ? this.config.fail : this.config.pass;
-    var message = name + check;
-    console.log(message);
-    console.log("-----------------------------"+"\n");
-};
-
-CompactReporter.prototype.color = function (value, color) {
+CompactReporter.prototype.color = function (value, color, style) {
     if (this.useColors) {
         if (color && cliColor) {
-            value = cliColor[color](value);
+            if (style) {
+                value = cliColor[color][style](value);
+            } else {
+                value = cliColor[color](value);
+            }
         }
     }
     return value;
 };
 
+CompactReporter.prototype.startTest = function (test) {
+/*    var name = test.getConfig().name;
+    if (!name) {
+        return;
+    }
 
+    var message = this.indent + name;
+    console.log(message);*/
+
+};
 
 CompactReporter.prototype.finishTest = function (test, err) {
     var name = test.getConfig().name;
@@ -62,16 +65,31 @@ CompactReporter.prototype.finishTest = function (test, err) {
 
     var check = err ? this.config.fail : this.config.pass;
 
-    var message = this.indent+name + check;
+    var message = this.indent + name + check;
+    if(err){
+        message = this.color(message,"redBright");
+    }
     console.log(message);
     if (err && err.actual) {
         var actual = this.color(err.actual, "yellow");
         var expected = this.color(err.expected, "yellow");
-        console.log(this.indent+this.indent+this.actual, actual);
-        console.log(this.indent+this.indent+this.expected, expected);
+        console.log(this.indent + this.indent + this.actual, actual);
+        console.log(this.indent + this.indent + this.expected, expected);
     }
 
 };
+
+CompactReporter.prototype.finishSuite = function (suite, err) {
+    var name = this.getItemName(suite);
+    if (!name) {
+        return;
+    }
+    var check = err ? this.config.fail : this.config.pass;
+    var message = name + check;
+    console.log(message);
+    console.log("-----------------------------" + "\n");
+};
+
 
 CompactReporter.prototype.exit = function (exitCode) {
     var totals = this.joe.getTotals();
@@ -85,18 +103,18 @@ CompactReporter.prototype.exit = function (exitCode) {
         var errorLogs = this.joe.getErrorLogs();
         console.log(this.config.summaryFail, totalPassedTests, totalTests, totalFailedTests, totalIncompleteTests, totalErrors);
         console.log("-----------------------------");
-        console.log(this.color("Error summary:","redBright"));
+        console.log(this.color("Error summary:", "redBright"));
         var lastSuit = "";
         for (var i = 0; i < errorLogs.length; i++) {
             var errorLog = errorLogs[i];
             var test = errorLog.test;
             var suite = test.getConfig().parent.getConfig().name;
-            if(suite !== lastSuit){
-                console.log("Suite: ",suite);
+            if (suite !== lastSuit) {
+                console.log("Suite: ", suite);
                 lastSuit = suite;
             }
-            
-            console.log(this.indent, i + 1+": ",test.getConfig().name);
+
+            console.log(this.indent, i + 1 + ": ", test.getConfig().name);
         }
 
         console.log("-----------------------------");
