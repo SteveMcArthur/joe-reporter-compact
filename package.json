@@ -1,0 +1,36 @@
+{
+    "name": "joe-reporter-compact",
+    "version": "0.0.1",
+    "description": "Compact Reporter for the Joe Testing Framework",
+    "homepage": "https://github.com/SteveMcArthur/joe-reporter-compact",
+    "keywords": [
+		"joe", "joe-reporter"
+	],
+    "author": "Steve McArthur <contact@stevemcarthur.co.uk> (http://www.stevemcarthur.co.uk)",
+    "maintainers": [
+    "Steve McArthur <contact@stevemcarthur.co.uk> (https://github.com/SteveMcArthur)"
+    ],
+    "contributors": [
+    "Steve McArthur (https://github.com/SteveMcArthur)"
+    ],
+    "bugs": {
+        "url": "https://github.com/SteveMcArthur/joe-reporter-compact/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SteveMcArthur/joe-reporter-compact.git"
+    },
+    "engines": {
+        "node": ">=0.12"
+    },
+    "dependencies": {
+        "joe-reporter-console": "~1.2.1"
+    },
+    "peerDependencies": {
+        "joe": "1.x"
+    },
+    "main": "./index.js",
+    "scripts": {
+    "test": "node ./tests/compact.test.js"
+  },
+}
