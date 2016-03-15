@@ -8,7 +8,7 @@ Reporter name: `compact`
 
 Designed to make the report compact and easy to read and with the suppression of stack traces.
 
-![Screen shot](https://raw.githubusercontent.com/SteveMcArthur/joe-reporter-compact/screenshot.jpg)
+![Screen shot](https://raw.githubusercontent.com/SteveMcArthur/joe-reporter-compact/master/screenshot.jpg)
 
 ## License
 Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
