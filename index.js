@@ -27,6 +27,8 @@ function CompactReporter(config) {
     this.indent = '    ';
     this.config.fail = this.useColors ? this.color(fail, "red", "bold") : fail;
     this.config.pass = this.useColors ? this.color(pass, "green", "bold") : pass;
+    this.errorLogs = [];
+    this.onFinish = this.config.onFinish || function () {};
 
 }
 
@@ -47,13 +49,13 @@ CompactReporter.prototype.color = function (value, color, style) {
 };
 
 CompactReporter.prototype.startTest = function (test) {
-/*    var name = test.getConfig().name;
-    if (!name) {
-        return;
-    }
+    /*    var name = test.getConfig().name;
+        if (!name) {
+            return;
+        }
 
-    var message = this.indent + name;
-    console.log(message);*/
+        var message = this.indent + name;
+        console.log(message);*/
 
 };
 
@@ -66,8 +68,8 @@ CompactReporter.prototype.finishTest = function (test, err) {
     var check = err ? this.config.fail : this.config.pass;
 
     var message = this.indent + name + check;
-    if(err){
-        message = this.color(message,"redBright");
+    if (err) {
+        message = this.color(message, "redBright");
     }
     console.log(message);
     if (err && err.actual) {
@@ -101,6 +103,10 @@ CompactReporter.prototype.exit = function (exitCode) {
 
     if (exitCode) {
         var errorLogs = this.joe.getErrorLogs();
+        var self = this;
+        errorLogs.forEach(function (item) {
+            self.errorLogs.push(item);
+        });
         console.log(this.config.summaryFail, totalPassedTests, totalTests, totalFailedTests, totalIncompleteTests, totalErrors);
         console.log("-----------------------------");
         console.log(this.color("Error summary:", "redBright"));
@@ -121,6 +127,9 @@ CompactReporter.prototype.exit = function (exitCode) {
     } else {
         console.log("\n" + this.config.summaryPass, totalPassedTests, totalTests);
     }
+    
+    this.onFinish(this);
+
 };
 
 module.exports = CompactReporter;

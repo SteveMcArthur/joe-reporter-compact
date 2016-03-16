@@ -1,0 +1,2418 @@
+[
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "This test should fail",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Boolean tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm NOT true: expected true to equal false",
+            "showDiff": false,
+            "actual": true,
+            "expected": false,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test2: I'm false",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Dynamic Tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm false: expected true to equal false",
+            "showDiff": false,
+            "actual": true,
+            "expected": false,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test4: I'm false",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Dynamic Tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm false: expected true to equal false",
+            "showDiff": false,
+            "actual": true,
+            "expected": false,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test of 'Something Else' should fail",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "String tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+            "showDiff": false,
+            "actual": "Something Else",
+            "expected": "Something",
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test of '1.1415' should fail",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Number tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+            "showDiff": false,
+            "actual": 1.1415,
+            "expected": 1.1416,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test of true and null",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Null tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm NOT true: expected true to equal null",
+            "showDiff": false,
+            "actual": true,
+            "expected": null,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test of '1.1415' and null",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Null tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+            "showDiff": false,
+            "actual": 1.1415,
+            "expected": null,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    },
+    {
+        "test": {
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "_events": {},
+            "config": {
+                "run": false,
+                "onError": "ignore",
+                "ambi": true,
+                "domain": true,
+                "name": "Test of 'Something' and null",
+                "parent": {
+                    "domain": null,
+                    "_events": {},
+                    "config": {
+                        "concurrency": 1,
+                        "onError": "ignore",
+                        "name": "Null tests",
+                        "parent": {
+                            "domain": null,
+                            "_events": {
+                                "item.add": [
+                                    null,
+                                    null
+                                ]
+                            },
+                            "config": {
+                                "concurrency": 1,
+                                "onError": "exit",
+                                "reporting": false,
+                                "name": false
+                            },
+                            "itemsRemaining": [],
+                            "itemsRunning": [],
+                            "itemsCompleted": [],
+                            "results": [
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:27:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm false: expected true to equal false",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": false,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm false: expected true to equal false\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:45:28)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'",
+                                                "showDiff": false,
+                                                "actual": "Something Else",
+                                                "expected": "Something",
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something Else': expected 'Something Else' to equal 'Something'\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:59:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            null,
+                                            null
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal 1.1416",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": 1.1416,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal 1.1416\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:76:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ],
+                                [
+                                    null,
+                                    [
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT true: expected true to equal null",
+                                                "showDiff": false,
+                                                "actual": true,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT true: expected true to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:89:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT '1.1415': expected 1.1415 to equal null",
+                                                "showDiff": false,
+                                                "actual": 1.1415,
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT '1.1415': expected 1.1415 to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:93:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "name": "AssertionError",
+                                                "message": "I'm NOT 'Something': expected 'Something' to equal null",
+                                                "showDiff": false,
+                                                "actual": "Something",
+                                                "expected": null,
+                                                "domain": {
+                                                    "domain": null,
+                                                    "_events": {},
+                                                    "members": []
+                                                },
+                                                "domainThrown": true,
+                                                "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+                                            }
+                                        ],
+                                        [
+                                            null,
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "events": [
+                                "error",
+                                "started",
+                                "running",
+                                "passed",
+                                "failed",
+                                "completed",
+                                "done",
+                                "destroyed"
+                            ],
+                            "status": "passed",
+                            "err": null
+                        },
+                        "nestedConfig": {
+                            "onError": "ignore"
+                        }
+                    },
+                    "itemsRemaining": [],
+                    "itemsRunning": [],
+                    "itemsCompleted": [],
+                    "results": [],
+                    "events": [
+                        "error",
+                        "started",
+                        "running",
+                        "passed",
+                        "failed",
+                        "completed",
+                        "done",
+                        "destroyed"
+                    ],
+                    "status": "destroyed",
+                    "err": null
+                }
+            },
+            "events": [
+                "error",
+                "started",
+                "running",
+                "failed",
+                "passed",
+                "completed",
+                "done",
+                "destroyed"
+            ],
+            "status": "destroyed",
+            "taskDomain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "err": null,
+            "result": []
+        },
+        "err": {
+            "name": "AssertionError",
+            "message": "I'm NOT 'Something': expected 'Something' to equal null",
+            "showDiff": false,
+            "actual": "Something",
+            "expected": null,
+            "domain": {
+                "domain": null,
+                "_events": {},
+                "members": []
+            },
+            "domainThrown": true,
+            "stack": "AssertionError: I'm NOT 'Something': expected 'Something' to equal null\n    at EventEmitterGrouped.<anonymous> (F:\\Development\\bevry\\joe-reporter-compact\\tests\\tester.js:97:24)\n    at ambi (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\node_modules\\ambi\\out\\lib\\ambi.js:57:27)\n    at Domain.fireMethod (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:385:23)\n    at Domain.run (domain.js:234:16)\n    at EventEmitterGrouped.Task.fire (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:423:27)\n    at Immediate._onImmediate (F:\\Development\\bevry\\joe-reporter-compact\\node_modules\\joe\\node_modules\\taskgroup\\out\\lib\\taskgroup.js:440:26)\n    at processImmediate [as _immediateCallback] (timers.js:367:17)"
+        }
+    }
+]

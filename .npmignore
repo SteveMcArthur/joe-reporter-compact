@@ -1,11 +1,22 @@
-.DS_Store
+# Build Files
+build/
+components/
+bower_components/
+node_modules/
+example/
+tests/
+-p/
+
+# Development Files
 .git*
 .travis*
-*.md
+.DS_Store
+Cakefile
 Makefile
-
-src/
-out/test/
-out/example/
-test/
-test-web/
+BACKERS.md
+CONTRIBUTING.md
+HISTORY.md
+**/src/
+**/test/
+*.bat
+*.jpg
