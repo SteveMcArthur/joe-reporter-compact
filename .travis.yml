@@ -1,6 +1,6 @@
 language: node_js
 install: "npm install"
-script: "node ./tests/test.js"
+script: "npm test"
 node_js:
   - "0.10"
 notifications:

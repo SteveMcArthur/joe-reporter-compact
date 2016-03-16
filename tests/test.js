@@ -1,4 +1,4 @@
-/*global require*/
+/*global require, process*/
 var runTests = require('./tester');
 var assert = require('assert-helpers');
 //var fs = require('fs');
@@ -58,5 +58,6 @@ runTests(function (reporter) {
         }
     }
     console.log("Traversed error logs...");
+    process.exit(0);
 
 });
