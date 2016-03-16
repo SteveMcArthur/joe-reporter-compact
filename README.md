@@ -1,6 +1,8 @@
 # Compact Console Reporter for the [Joe Testing Framework](https://github.com/bevry/joe)
 
-[![NPM version](https://badge.fury.io/js/joe-reporter-compact.png)](https://npmjs.org/package/joe-reporter-compact)
+[![Build Status](https://img.shields.io/travis/SteveMcArthur/joe-reporter-compact/master.svg)](https://travis-ci.org/SteveMcArthur/joe-reporter-compact "Check this project's build status on TravisCI")
+[![NPM version](https://img.shields.io/npm/v/joe-reporter-compact.svg)](https://www.npmjs.com/package/joe-reporter-compact "View this project on NPM")
+[![NPM downloads](https://img.shields.io/npm/dm/joe-reporter-compact.svg)](https://www.npmjs.com/package/joe-reporter-compact "View this project on NPM")
 
 [Installation and usage instructions here.](https://github.com/bevry/joe/wiki/Using-Custom-Reporters)
 
