@@ -2,15 +2,28 @@
 function runTests(callback) {
     "use strict";
     var joe = require("joe");
+    var request = require("superagent");
+
     //var assert = require("assert-helpers");
     //var assert = require("assert");
     var chai = require('chai');
     var assert = chai.assert;
     var Reporter = require('../index');
 
-    var compact = new Reporter({onFinish:callback});
+    var compact = new Reporter({
+        onFinish: callback
+    });
 
     joe.setReporter(compact);
+
+
+    function checkURL(url, done) {
+        request.get(url).end(function (error, res) {
+            var statusCode = (res) ? res.statusCode : null;
+            done(error, statusCode, res);
+        });
+
+    }
 
     try {
 
@@ -99,6 +112,31 @@ function runTests(callback) {
 
             test("Test of null and null", function () {
                 assert.equal(null, null, "I'm null");
+            });
+
+        });
+        
+        var linkList = [
+            "http://docpad.org",
+            "https://github.com/bevry/query-engine",
+            "http://uberfrak.com",
+            "http://semantic-ui.com"
+        ];
+
+        joe.suite("URL tests", function (suite, test) {
+            this.setNestedConfig({
+                onError: 'ignore'
+            });
+
+            linkList.forEach(function (url) {     
+                test(url, function (complete) {
+                    checkURL(url, function (error, statusCode) {
+                        assert.equal(statusCode, 200, "status code");
+                        complete();
+                    });
+
+                });
+
             });
 
         });

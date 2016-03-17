@@ -69,7 +69,7 @@ CompactReporter.prototype.finishTest = function (test, err) {
 
     var message = this.indent + name + check;
     if (err) {
-        message = this.color(message, "redBright");
+        message = this.color(message, "red","bold");
     }
     console.log(message);
     if (err && err.actual) {
@@ -109,7 +109,7 @@ CompactReporter.prototype.exit = function (exitCode) {
         });
         console.log(this.config.summaryFail, totalPassedTests, totalTests, totalFailedTests, totalIncompleteTests, totalErrors);
         console.log("-----------------------------");
-        console.log(this.color("Error summary:", "redBright"));
+        console.log(this.color("Error summary:", "red","bold"));
         var lastSuit = "";
         for (var i = 0; i < errorLogs.length; i++) {
             var errorLog = errorLogs[i];

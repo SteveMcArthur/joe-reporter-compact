@@ -1,7 +1,7 @@
 /*global require, process*/
 var runTests = require('./tester');
 var assert = require('assert-helpers');
-//var fs = require('fs');
+var fs = require('fs');
 
 function msg(txt, k) {
     console.log("    [" + k + "] " + txt + " \u001b[32m\u221A\u001b[m");
@@ -30,7 +30,7 @@ runTests(function (reporter) {
     var b = !!reporter;
     isEqual(b, true, "Reporter exists");
 
-    isEqual(errorLogs.length, 8, "Error log length is 8");
+    isEqual(errorLogs.length, 9, "Error log length is 9");
 
     b = !!errorLogs[0].test.config;
     isEqual(b, true, "errorLogs[0].test.config exists");
