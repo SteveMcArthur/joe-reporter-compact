@@ -29,6 +29,7 @@ function CompactReporter(config) {
     this.config.pass = this.useColors ? this.color(pass, "green", "bold") : pass;
     this.errorLogs = [];
     this.onFinish = this.config.onFinish || function () {};
+    this.hideSuccess = this.config.hideSuccess || false;
 
 }
 
@@ -71,7 +72,10 @@ CompactReporter.prototype.finishTest = function (test, err) {
     if (err) {
         message = this.color(message, "red","bold");
     }
-    console.log(message);
+    if(!this.hideSuccess || err){
+        console.log(message);
+    }
+    
     if (err && err.actual) {
         var actual = this.color(err.actual, "yellow");
         var expected = this.color(err.expected, "yellow");
