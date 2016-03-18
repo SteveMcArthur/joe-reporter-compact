@@ -134,7 +134,7 @@ CompactReporter.prototype.exit = function (exitCode) {
                 lastSuit = suite;
             }
 
-            log(this.indent+ i + 1 + ": "+ test.getConfig().name);
+            log(this.indent+ (i + 1) + ": "+ test.getConfig().name);
         }
 
         log("-----------------------------");
