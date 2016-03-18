@@ -2,6 +2,8 @@
 "use strict";
 var util = require('util');
 var ConsoleReporter = require('joe-reporter-console');
+var fs = require('fs');
+var path = require('path');
 
 var isBrowser = (typeof window === 'undefined') ? false : true;
 var isWindows = process ? process.platform.indexOf('win') > -1 : false;
@@ -96,6 +98,12 @@ CompactReporter.prototype.finishSuite = function (suite, err) {
     console.log("-----------------------------" + "\n");
 };
 
+var summary = "";
+function log(message){
+    console.log(message);
+    summary+= message+"\n";
+}
+
 
 CompactReporter.prototype.exit = function (exitCode) {
     var totals = this.joe.getTotals();
@@ -111,27 +119,31 @@ CompactReporter.prototype.exit = function (exitCode) {
         errorLogs.forEach(function (item) {
             self.errorLogs.push(item);
         });
-        console.log(this.config.summaryFail, totalPassedTests, totalTests, totalFailedTests, totalIncompleteTests, totalErrors);
-        console.log("-----------------------------");
-        console.log(this.color("Error summary:", "red","bold"));
+        summary = "";
+        var msg = util.format(this.config.summaryFail, totalPassedTests, totalTests, totalFailedTests, totalIncompleteTests, totalErrors);
+        log(msg);
+        log("-----------------------------");
+        log(this.color("Error summary:", "red","bold"));
         var lastSuit = "";
         for (var i = 0; i < errorLogs.length; i++) {
             var errorLog = errorLogs[i];
             var test = errorLog.test;
             var suite = test.getConfig().parent.getConfig().name;
             if (suite !== lastSuit) {
-                console.log("Suite: ", suite);
+                log("Suite: "+ suite);
                 lastSuit = suite;
             }
 
-            console.log(this.indent, i + 1 + ": ", test.getConfig().name);
+            log(this.indent+ i + 1 + ": "+ test.getConfig().name);
         }
 
-        console.log("-----------------------------");
+        log("-----------------------------");
     } else {
-        console.log("\n" + this.config.summaryPass, totalPassedTests, totalTests);
+        log("\n" + util.format(this.config.summaryPass, totalPassedTests, totalTests));
     }
-    
+    summary = summary.replace(/\[\d+m/g,'');
+    var outfile = path.join(process.cwd(),"summary.txt");
+    fs.writeFileSync(outfile,summary,'utf-8');
     this.onFinish(this);
 
 };
